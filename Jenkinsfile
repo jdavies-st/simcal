@@ -24,7 +24,7 @@ pipeline {
         stage('Install') {
             steps {
                 sh("""#!/usr/bin/env bash
-                      source $WORKSPACE/miniconda3/etc/profile.d/conda.sh
+                      // source $WORKSPACE/miniconda3/etc/profile.d/conda.sh
                       conda activate simcal
 
                       pip install -U pip
